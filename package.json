@@ -7,7 +7,10 @@
     "build": "webpack --colors",
     "serve": "webpack-dev-server --content-base build/ --colors --progress",
     "start": "npm run build && npm run serve",
-    "lint:css": "stylelint \"./src/components/**/*.js\""
+    "lint:css": "stylelint \"./src/components/**/*.js\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test-storybook": "storyshots"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,8 @@
   },
   "homepage": "https://github.com/jmocana2/moment-react#readme",
   "devDependencies": {
+    "@kadira/storybook": "^2.35.3",
+    "@kadira/storyshots": "^2.1.0",
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-latest": "^6.24.1",
@@ -36,11 +41,13 @@
     "stylelint-config-standard": "^16.0.0",
     "stylelint-processor-styled-components": "^0.1.0",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "storybook-addon-specifications": "^1.0.16"
   },
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-router": "^4.0.0-alpha.4",
     "styled-components": "^1.4.5"
   }
 }

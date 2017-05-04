@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const styledHeader = styled.header`
-  width: 995px;
-  margin: 0 auto;
-  background-color: #eaeaea;
+const StyledHeader = styled.header`
+    width: 100%;
+    background-color: blue;
+    color: #FFF;
 `;
 
-export { styledHeader };
+export { StyledHeader };

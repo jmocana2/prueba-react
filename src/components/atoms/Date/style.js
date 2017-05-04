@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-const styledDate = styled.time`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
+const StyledDate = styled.time`
+    width: 100%;
+    color: pink;
 `;
 
-export { styledDate };
+export { StyledDate };

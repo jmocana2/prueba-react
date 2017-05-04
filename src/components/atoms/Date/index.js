@@ -1,9 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import { styledDate } from './style.js';
+import PropTypes from 'prop-types';
+import { StyledDate } from './style';
 
-const MyDate = () => (    
-   <styledDate dateTime="2017-05-03 10:38">Martes 3 de mayo de 2017</styledDate>
-);
+const Date = () => <StyledDate>3 de Myo de 2017</StyledDate>;
 
-export default MyDate;
+Date.propTypes = {};
+
+Date.defaultProps = {};
+
+export default Date;
