@@ -1,16 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
-import MyDate from '../../atoms/Date';
+import PropTypes from 'prop-types';
+import { StyledHeader } from './style';
 import Logo from '../../atoms/Logo';
-import { styledHeader } from './style.js';
+import Date from '../../atoms/Date';
 
-const Header = () => (
-  <div>
-      <styledHeader>
-        <MyDate />
-        <Logo />
-      </styledHeader>
-  </div>
-);
+const Header = () => <StyledHeader>
+    <Logo />
+    <Date />
+</StyledHeader>;
+
+Header.propTypes = {};
+
+Header.defaultProps = {};
 
 export default Header;

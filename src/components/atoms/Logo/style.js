@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-const styledLogo = styled.h1`
-  margin: 0 auto;
+const StyledLogo = styled.h1`
+    font: normal 30px/32px 'Arial', 'sans-serif';
+    color: #CCC;
 `;
 
-export { styledLogo };
+export { StyledLogo };

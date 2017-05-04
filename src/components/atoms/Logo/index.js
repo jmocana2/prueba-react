@@ -1,9 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import { styledLogo } from './style.js';
+import PropTypes from 'prop-types';
+import { StyledLogo } from './style';
 
-const Logo = () => (
-   <styledLogo><img src="http://cadenaser00.epimg.net/ser/imagenes/2017/05/02/television/1493731075_712962_1493731585_sumario_normal.jpg" alt="antena3" width="200" height="220"/></styledLogo>
-);
+const Logo = () => <StyledLogo><img src="http://vertele.eldiario.es/files/2015/01/3.jpg?hash=3aff8f7ee071c7edad34ca9709bd36d7feaec470" /></StyledLogo>;
+
+Logo.propTypes = {};
+
+Logo.defaultProps = {};
 
 export default Logo;
