@@ -1,8 +1,13 @@
 // Atoms
-import '../src/components/atoms/Logo/stories';
-import '../src/components/atoms/Date/stories';
-import '../src/components/atoms/Button/stories';
+import '../src/components/core/atoms/Logo/stories';
+import '../src/components/core/atoms/Date/stories';
+import '../src/components/core/atoms/Button/stories';
+
+//Molecules
+import '../src/components/core/molecules/List/stories';
+import '../src/components/core/molecules/animations/Rotate/stories';
+
 // Organisms
-import '../src/components/organisms/Header/stories';
-import '../src/components/organisms/Main/stories';
-import '../src/components/organisms/Footer/stories';
+import '../src/components/core/organisms/Header/stories';
+import '../src/components/core/organisms/Main/stories';
+import '../src/components/core/organisms/Footer/stories';

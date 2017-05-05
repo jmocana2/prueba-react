@@ -1,11 +1,20 @@
 import React from 'react';
 import { render } from 'react-dom';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { HashRouter, Match } from 'react-router';
 
-import Header from '../organisms/Header'; 
-import Main from '../organisms/Main'; 
-import Footer from '../organisms/Footer'; 
+import Header from '../core/organisms/Header'; 
+import Main from '../core/organisms/Main'; 
+import Footer from '../core/organisms/Footer'; 
+
+// Set the theme to royalblue in this parent
+const BlueSection = ({children}) => (
+  <ThemeProvider theme={{
+    main: 'royalblue'
+  }}>
+    { children }
+  </ThemeProvider>
+)
 
 const App = () =>
     <HashRouter>
