@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { StyledButton } from './style';
 
-const Button = () => <StyledButton>Pulsame!!</StyledButton>;
+class Button extends PureComponent {
+  render() {
+    return (
+      <StyledButton	small={this.props.small}>Pulsame!!</StyledButton>
+    );
+  }
+}
 
-Button.propTypes = {};
+Button.propTypes = {
+  small: PropTypes.bool
+};
 
-Button.defaultProps = {};
+Button.defaultProps = {
+  small: false
+};
 
 export default Button;
