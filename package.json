@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "react": "^15.5.4",
+    "react-aria-tooltip": "^1.1.1",
     "react-dom": "^15.5.4",
     "styled-components": "^1.4.5"
   }

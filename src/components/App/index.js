@@ -12,10 +12,14 @@ import Footer from '../core/organisms/Footer';
 import Button from '../core/atoms/Button'; 
 import Date from '../core/atoms/Date'; 
 import Logo from '../core/atoms/Logo'; 
+import Tooltip from '../core/atoms/Tooltip'; 
 
 const App = () => <div>
     <Button />
     <Button small/>
+    <ReactARIAToolTip message="Tooltip text" eventType="hover" direction="bottom" bgcolor="#333">
+        <span>Some text</span>
+    </ReactARIAToolTip>
 </div>                
                 
 export default App;
